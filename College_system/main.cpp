@@ -2,8 +2,8 @@
 #include <cstdlib>
 #include <windows.h>
 #include <cstring>
-#include "HandlingData.h"
-#include "ShowData.h"
+#include "./include/HandlingData.h"
+#include "./include/StaffData.h"
 
 using namespace std;
 
@@ -92,8 +92,8 @@ int main()
 
 void sign_in_case(int c)
 {
-    if(h1.sign_in(c))
-        continue;
+    if(h1.sign_in(c)){}
+        // continue;
     else
         printline("\n\t Invalid Username or Password, try again..:)\n",1,12);
 
